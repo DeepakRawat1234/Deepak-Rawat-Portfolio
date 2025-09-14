@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    text-align: center;
+}
+.contact-title{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+.contact-desc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+.contact-form{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+.name ,.email, .msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.9rem 1rem;
+    color: white;
+    border: none;
+    
+    border-radius: 0.5rem;
+    background-color: rgb(40, 40, 40);
+}
+.submit-btn{
+    background: white;
+    border: none;
+    padding: 0.75rem 3.5rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.links img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    
+
+}
