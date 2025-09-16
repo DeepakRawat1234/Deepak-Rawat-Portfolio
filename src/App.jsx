@@ -6,16 +6,23 @@ import Service from './components/servieses/Service'
 import Contact from './components/contact/Contact'
 import Footer from './components/Footer/footer'
 import Projects from './components/projects/Projects'
+import Certification from './components/certification/Certification'
+import "./App.css"
 
 const App = () => {
   return (
-    <div>
+    <div className='Div'>
       <Navbar/>
-      <Hero/>
+      
+      <div className="App-Div">
+        <Hero/>
       <About/>
       <Service/>
       <Projects/>
+      <Certification/>
       <Contact/>
+      
+      </div>
       <Footer/>
     </div>
   )

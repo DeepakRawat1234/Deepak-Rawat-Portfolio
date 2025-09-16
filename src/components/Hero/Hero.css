@@ -1,10 +1,12 @@
-.Hero{
+.Hero {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 35px;
+    padding-top: 100px;
 }
-.Hero img{
+
+.Hero img {
     padding: 1px;
     background-color: rgb(101, 137, 4);
     margin-top: 70px;
@@ -12,25 +14,31 @@
     width: 400px;
     border-radius: 50%;
 }
-.Hero h1{
+
+.Hero h1 {
     text-align: center;
     width: 70%;
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
 }
-.Hero h1 span{
-    background: linear-gradient(270deg #df8908 ,#8415ff );
-   color: rgb(212, 6, 182);
+
+.Hero h1 span {
+    background: linear-gradient(270deg, #df8908, #8415ff);
+    color: rgb(212, 6, 182);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.Hero p{
+
+.Hero p {
     width: 50%;
     text-align: center;
     font-size: 20px;
     line-height: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.Hero-action{
+
+.Hero-action {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -38,17 +46,18 @@
     font-weight: 500;
     margin-bottom: 50px;
 }
-.hero-connect{
+
+.hero-connect {
     padding: 15px 25px;
     border-radius: 50px;
     border: none;
     cursor: pointer;
-        color: white;
+    color: white;
     transition: 1s;
-
-    background: linear-gradient(264deg,#df8908 ,#8415ff);
+    background: linear-gradient(264deg, #df8908, #8415ff);
 }
-.hero-resume{
+
+.hero-resume {
     padding: 15px 45px;
     border-radius: 50px;
     border: 1px solid #fff;
@@ -57,13 +66,71 @@
     color: white;
     transition: 1s;
 }
-.hero-resume a{
+
+.hero-resume a {
     color: white;
     text-decoration: none;
 }
-.hero-connect:hover{
+
+.hero-connect:hover {
     border: 2px solid white;
 }
-.hero-resume:hover{
+
+.hero-resume:hover {
     border-color: #8415ff;
+}
+
+/* Responsive for tablets and small devices */
+@media (max-width: 992px) {
+    .Hero h1 {
+        font-size: 32px;
+        width: 80%;
+    }
+
+    .Hero p {
+        width: 70%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .hero-connect,
+    .hero-resume {
+        padding: 12px 20px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Hero h1 {
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .Hero p {
+        width: 90%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .Hero img {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Hero h1 {
+        font-size: 24px;
+    }
+
+    .Hero p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .hero-connect,
+    .hero-resume {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
 }

@@ -1,4 +1,10 @@
-.about{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,88 +12,186 @@
     gap: 80px;
     margin: 90px 100px;
     margin-bottom: 180px;
+    padding-bottom: 80px;
 }
-.about-title{
+
+.about-title {
     position: relative;
 }
-.about-title h1{
-    font-size: 45px;
+
+.about-title h1 {
+    font-size: 48px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #df08ad;
+    padding: 0 20px;
+    text-align: center;
+    word-wrap: break-word;
 }
-.about-sections{
+
+.about-sections {
     display: flex;
-gap: 80px;
+    gap: 80px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
-.about-right{
+
+.about-left img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-right {
     display: flex;
     flex-direction: column;
     gap: 80px;
+    padding: 0 20px;
 }
-.about-para{
+
+.about-para {
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.6;
+    padding: 0 15px;
+    word-break: break-word;
+    max-width: 800px;
+    text-align: justify;
 }
-.about-skills{
+
+.about-skills {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
-.about-skill{
+
+.about-skill {
     display: flex;
-    gap: 50px;
+    gap: 20px; /* Reduced gap for cleaner alignment */
     align-items: center;
-    transition: 03s;
+    transition: transform 0.3s ease;
+    flex-wrap: wrap;
 }
-.about-skill p{
+
+.about-skill p {
     min-width: 150px;
     font-size: 20px;
     font-weight: 500;
+    padding: 0 10px;
+    text-align: left;
+    word-break: break-word;
+    margin-bottom: 0; /* Remove extra margin */
 }
-.about-skill hr{
+
+.about-skill hr {
     border: none;
     outline: none;
-    width: 50%;
-    height: 50%;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #8415FF 106.20%);
+    width: 100%;
+    max-width: 300px;
+    height: 6px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #DF8908 0%, #8415FF 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 0; /* Remove extra margin */
 }
-.about-skill:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-/* .about-links{
-    display: flex;
-    
-    align-items: center;
-    gap:10px;
-    transition: 0.5s;
-    text-align: center;
-}
-.about-links p{
-    display: block;
-    font-weight: 500;
-}
-.about-links .icon{
-    display: block;
-}
-.about-links p a{
-   color: rgb(233, 73, 10); 
-    text-decoration: none;
-    font-size: 40px;
-}
- .media-link{
-    padding:  20px 50px;
-    width: 200px;
-   
-    
-} */
 
-.about-left img{
-    width: 400px;
-    height: auto;
+.about-skill:hover {
+    transform: scale(1.05);
 }
+
+@media (min-width: 1440px) {
+    .about {
+        margin: 120px 180px;
+    }
+
+    .about-title h1 {
+        font-size: 60px;
+    }
+
+    .about-left img {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about {
+        margin: 60px 40px;
+        gap: 60px;
+    }
+
+    .about-title h1 {
+        font-size: 36px;
+    }
+
+    .about-left img {
+        width: 400px;
+    }
+
+    .about-para {
+        font-size: 18px;
+    }
+
+    .about-skill p {
+        font-size: 18px;
+    }
+
+    .about-skill hr {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin: 40px 20px;
+        gap: 40px;
+        padding-bottom: 60px;
+    }
+
+    .about-title h1 {
+        font-size: 28px;
+    }
+
+    .about-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .about-skill {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-skill hr {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title h1 {
+        font-size: 24px;
+    }
+
+    .about-para {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .about-skill p {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+
+    .about-left img {
+        max-width: 250px;
+    }
+}
+    

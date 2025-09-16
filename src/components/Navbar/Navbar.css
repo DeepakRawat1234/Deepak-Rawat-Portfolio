@@ -4,14 +4,20 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 17px;
+    position: fixed;
+    background-color: rgb(23, 22, 22);
+    width: 100%;
+    height: 70px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     
 }
 .navbar .logo{
-    width: 80px;
+    width: 70px;
     border-radius: 50%;
     height: auto;
 }
-.nav-menu{
+.desktopmenu{
     display: flex;
     align-items: center;
     list-style: none;
@@ -20,14 +26,16 @@
   font-optical-sizing: auto;
     font-size: 18px;
 }
-.nav-menu li{
+.desktopmenulistitem{
     cursor: pointer;
     transition: 1s;
 }
-.nav-menu li:hover{
+.desktopmenulistitem:hover{
 color: #d47c25;
 }
-.nav-connect{
+.contact-btn{
+    outline: none;
+    border: none;
     padding: 15px 20px;
      font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -37,6 +45,56 @@ font-size: 18px;
 cursor: pointer;
 transition: 0.5s;
 }
-.nav-connect:hover{
+.contact-btn:hover{
     transform: scale(1.05);
+}
+.active{
+    color: #d47c25;
+}
+.MobileMenu{
+    width: 40px;
+    border-radius: 10px;
+    display: none;
+}
+.navmenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+.listitem{
+    cursor: pointer;
+    color: white;
+    padding: .5rem 1rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+}
+.listitem:hover{
+    color: #d47c25;
+}
+@media screen and (max-width:720px) {
+    .MobileMenu{
+        display: flex;
+        width: 50px;
+    }
+    .desktopmenu{
+        display: none;
+    }
+     .contact-btn{
+        display: none;
+    }
+    
+}
+@media (max-width:520px){
+    .logo{
+        width: 50px !important;
+    }
 }

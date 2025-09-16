@@ -1,27 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.contact-page{
+
+.contact-page {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 40px 0;
     text-align: center;
+    gap: 80px;
 }
-.contact-title{
+
+.contact-title {
     text-align: center;
     font-size: 60px;
     margin-bottom: 60px;
 }
-.contact-desc{
+
+.contact-desc {
     padding: 1rem;
     font-size: medium;
     font-weight: 300;
 }
-.contact-form{
+
+.contact-form {
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -30,7 +35,10 @@
     width: 90vw;
     max-width: 60rem;
 }
-.name ,.email, .msg{
+
+.name,
+.email,
+.msg {
     font-size: medium;
     width: 100%;
     max-width: 40rem;
@@ -38,11 +46,11 @@
     padding: 0.9rem 1rem;
     color: white;
     border: none;
-    
     border-radius: 0.5rem;
     background-color: rgb(40, 40, 40);
 }
-.submit-btn{
+
+.submit-btn {
     background: white;
     border: none;
     padding: 0.75rem 3.5rem;
@@ -50,15 +58,103 @@
     border-radius: 0.5rem;
     cursor: pointer;
 }
-.links{
+
+.links {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    justify-content: center;
 }
-.links img{
+
+.links img {
     width: 40px;
     border-radius: 50%;
     border: 1.5px solid white;
-    
+}
 
+/* ===== Responsive Adjustments ===== */
+
+/* Extra Large Devices (≥1440px) */
+@media (min-width: 1440px) {
+    .contact-page {
+        padding: 60px 160px;
+    }
+
+    .contact-title {
+        font-size: 72px;
+    }
+
+    .name, .email, .msg {
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium Devices (Tablets ≤1024px) */
+@media (max-width: 1024px) {
+    .contact-page {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 60px;
+    }
+
+    .contact-title {
+        font-size: 48px;
+    }
+
+    .name, .email, .msg {
+        max-width: 100%;
+    }
+
+    .submit-btn {
+        padding: 0.75rem 2.5rem;
+    }
+}
+
+/* Small Devices (Phones ≤768px) */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 36px;
+        padding: 0 10px;
+    }
+
+    .contact-desc {
+        font-size: 1rem;
+    }
+
+    .name, .email, .msg {
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        padding: 0.6rem 2rem;
+        margin: 1.5rem;
+    }
+
+    .links img {
+        width: 35px;
+    }
+}
+
+/* Extra Small Devices (≤480px) */
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-desc {
+        font-size: 0.9rem;
+    }
+
+    .name, .email, .msg {
+        padding: 0.7rem 1rem;
+    }
+
+    .submit-btn {
+        padding: 0.5rem 1.5rem;
+        margin: 1rem;
+    }
+
+    .links img {
+        width: 30px;
+    }
 }
