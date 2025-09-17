@@ -10,7 +10,7 @@ const Project_data=[
         img_url:hackthon,
         img_title:"QuickCare (Hackthon Idea)",
         img_desc:"Platform  for booking  appointments and instant e-prescription with Doctors",
-        link:"https://deepakrawat1234.github.io/Flipkart-Clone/"
+        link:"https://www.linkedin.com/posts/deepak-rawat-46a51628b_promptx-promptx-hackathon-activity-7309840411861078016-brwT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZgqBIBxT4aHvjioo7pLc-5ennZDkrOSnY"
     },
     {
 

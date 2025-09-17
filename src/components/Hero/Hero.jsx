@@ -15,7 +15,7 @@ Skilled in building responsive, user-friendly interfaces using HTML, CSS, JavaSc
             <button className='hero-connect' onClick={()=>{
                document.getElementById('Contact').scrollIntoView({behavior:"smooth"})
             }}>Connect with me</button>
-            <button className="hero-resume" > <a href="./new-resume.pdf " download>My Resume</a></button>
+            <button className="hero-resume" > <a href="https://drive.google.com/file/d/1nlbEAvKXdLxY4lcmMAf28ADpIE06P3Gz/view?usp=sharing" download>My Resume</a></button>
         </div>
     </div>
   )

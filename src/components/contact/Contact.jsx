@@ -37,10 +37,10 @@ const Contact = () => {
           <textarea name="message" rows="6" placeholder='Your Message' className='msg'></textarea>
           <button className="submit-btn" type='submit' value='send'>Submit</button>
           <div className="links">
-            <a href="https://www.linkedin.com/in/deepak-rawat-123456789/"><img src={fbicon} alt="Facebook" className='link' /></a>
-            <img src={instaicon} alt="Instagram" className='link' />
-            <a href="https://www.linkedin.com/in/deepak-rawat-123456789/">   <img src={linkdinicon} alt="Linkdin" className='link' /></a> 
-              <a href="https://www.instagram.com/rawat_yuvii/"> <img src={giticon} alt="Github" className='link' /></a>
+            <a href="https://www.facebook.com/profile.php?id=100076409590906"><img src={fbicon} alt="Facebook" className='link' /></a>
+            <a href="https://www.instagram.com/rawat_yuvii/"><img src={instaicon} alt="Instagram" className='link' /></a>
+            <a href="https://www.linkedin.com/in/deepak-rawat-profile/">   <img src={linkdinicon} alt="Linkdin" className='link' /></a> 
+              <a href="https://github.com/DeepakRawat1234"> <img src={giticon} alt="Github" className='link' /></a>
           </div>
     </form>
 </div>
