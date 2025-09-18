@@ -153,7 +153,7 @@
     }
 
     .Certificate-box {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
     }
 
     .Certificates img {
@@ -178,6 +178,9 @@
 
     .Certificates h2 {
         font-size: 16px;
+    }
+    .Certificate-box {
+        grid-template-columns:1fr;
     }
 
     .Certificates h5 {

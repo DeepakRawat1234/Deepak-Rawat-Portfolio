@@ -2,8 +2,13 @@
     scroll-behavior: smooth;
     transition: 1s ease-in-out;
 }
-@media (min-width:1440px){
+@media (min-width:2500px){
     .App-Div{
         padding: 0 500px;
+    }
+}
+@media (min-width:4000px){
+    .App-Div{
+        padding: 0 900px;
     }
 }
